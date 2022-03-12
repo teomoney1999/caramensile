@@ -15,12 +15,12 @@ const Menu = ({ className }) => {
       <Row className="menu__items">
         <Col md={6}>
           {firstCol.map((menu) => (
-            <MenuItem item={menu} />
+            <MenuItem item={menu} key={menu.name} />
           ))}
         </Col>
         <Col md={6}>
           {secondCol.map((menu) => (
-            <MenuItem item={menu} />
+            <MenuItem item={menu} key={menu.name} />
           ))}
         </Col>
       </Row>

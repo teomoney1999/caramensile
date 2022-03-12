@@ -5,7 +5,12 @@ const Order = ({ className }) => {
   return (
     // <Container className="order" fluid>
     <div className="order">
-      <Image src="/img/creme-caramen-dish.jpg" width={1600} height={700} />
+      <Image
+        src="/img/creme-caramen-dish.jpg"
+        width={1600}
+        height={700}
+        alt={"Ảnh nền Caramen"}
+      />
       <div className="order__card">
         <div className="order__card__image">
           <IoIosRestaurant />

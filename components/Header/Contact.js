@@ -9,7 +9,7 @@ const Contact = ({ className }) => {
       <div className="space-between">
         <div className="header__row__contact">
           {addressData.map((address) => (
-            <Widget>
+            <Widget key={address.content}>
               {address.icon}
               {address.content}
             </Widget>
