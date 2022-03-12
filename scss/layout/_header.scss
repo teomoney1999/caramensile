@@ -1,0 +1,56 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $header-color;
+    font-size: $default-font-size;
+    width: $default-width;
+    z-index: 1000;
+  }
+  
+  .header {
+    height: 100%;
+    &__row {
+      width: 100%;
+      padding: 1rem 0;
+  
+      &__border {
+        border-bottom: 1px solid $border-bottom-color;
+      }
+      &__contact {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+      }
+      &__social_media {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+      }
+    }
+  
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+  
+      &__logo {
+
+      }
+  
+      &__element {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3rem;
+        color: $grey;
+  
+        &__item {
+          display: flex;
+          justify-content: space-around;
+          gap: 1.5rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  

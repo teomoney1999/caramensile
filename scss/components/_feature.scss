@@ -1,0 +1,33 @@
+.feature {
+  text-align: center;
+  margin: 10rem 0;
+  &__title {
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+  &__description {
+    font-size: 2rem;
+    padding: 0 4rem;
+    margin-bottom: 6rem;
+  }
+  &__card {
+    &__items {
+      padding: 0 1rem;
+    }
+    &__img {
+      font-size: 8rem;
+      color: $primary-color;
+    }
+    &__title {
+      font-size: 2rem;
+      color: $primary-color;
+      margin-bottom: 2rem;
+    }
+    &__text {
+      font-size: 1.5rem;
+      padding: 0 2rem;
+      color: $grey;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "abstracts/_variables";
+
+@import "base/_animation";
+@import "base/_base";
+@import "base/_bootstrap";
+@import "base/_typography";
+@import "base/_utilities";
+
+@import "components/_card"; 
+@import "components/_customer"; 
+@import "components/_box"; 
+@import "components/_intro";
+@import "components/_feature";
+@import "components/_order";
+@import "components/_widget";
+@import "components/_menu"; 
+
+@import "layout/_header"; 
+@import "layout/_footer"; 
+
+@import "pages/landing"; 
+
+// @import "test";
+
+

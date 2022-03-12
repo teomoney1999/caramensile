@@ -1,0 +1,35 @@
+.footer {
+  &__logo {
+    text-align: center;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    padding: 5rem 0 8rem 0;
+    margin-bottom: 4rem;
+    &__description {
+      padding: 0 36rem;
+      font-size: 1.5rem;
+      margin: 3rem 0;
+    }
+    &__location {
+      display: flex;
+      justify-content: center;
+      font-size: 1.6rem;
+      gap: 10px;
+    }
+  }
+  &__author {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 4rem 0;
+    &__name {
+      color: $grey;
+      font-size: 1.6rem;
+    }
+    &__social-media {
+      font-size: 3rem;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.intro {
+  position: relative;
+  margin-top: 10rem;
+  // height: 700px;
+  background-color: black;
+  // background: transparent;
+}
+
+.dialog {
+  position: absolute;
+  left: 26%;
+  top: 25%;
+//   border: 3px solid white;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  &__title {
+    font-size: 10rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+  }
+
+  &__slogan {
+    font-size: 5rem;
+    font-weight: 100;
+    letter-spacing: 10px;
+    margin-bottom: 2rem;
+  }
+  &__separator {
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin: 6rem 0;
+  }
+  &__action {
+    // display: flex;
+    // justify-content: space-around;
+    // gap: 10px;
+    text-align: center;
+    &__btn {
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      margin: 0 4rem;
+      background: transparent;
+      color: white;
+      padding: 1.5rem 6rem;
+      letter-spacing: 3px;
+      &:hover {
+        background: rgba(255, 255, 255, 0.25);
+        color: black;
+      }
+    }
+    &__or {
+      font-size: 2rem;
+      font-weight: 100;
+    //   letter-spacing: 5px;
+    }
+  }
+}

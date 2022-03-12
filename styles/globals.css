@@ -1,16 +1,271 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 62.5%;
+  box-sizing: border-box; }
 
 a {
   color: inherit;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-* {
-  box-sizing: border-box;
-}
+/* The following block can be included in a custom.scss */
+/* make the customizations */
+/* import bootstrap to set changes */
+.fs-2 {
+  font-size: 2rem; }
+
+.fs-4 {
+  font-size: 10rem !important; }
+
+.primary-color {
+  color: #6f4e37; }
+
+.ml-1 {
+  margin-left: 1rem; }
+
+.mr-p5 {
+  margin-right: .5rem; }
+
+.wrapper {
+  margin: 0 19rem; }
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.opacity-3 {
+  opacity: 0.3; }
+
+.card__vertical {
+  display: flex; }
+
+.customer {
+  background-color: #818b92;
+  color: white; }
+  .customer__title {
+    font-weight: bold; }
+
+.intro {
+  position: relative;
+  margin-top: 10rem;
+  background-color: black; }
+
+.dialog {
+  position: absolute;
+  left: 26%;
+  top: 25%;
+  text-align: center;
+  color: white;
+  padding: 1rem; }
+  .dialog__title {
+    font-size: 10rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: 2rem; }
+  .dialog__slogan {
+    font-size: 5rem;
+    font-weight: 100;
+    letter-spacing: 10px;
+    margin-bottom: 2rem; }
+  .dialog__separator {
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin: 6rem 0; }
+  .dialog__action {
+    text-align: center; }
+    .dialog__action__btn {
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      margin: 0 4rem;
+      background: transparent;
+      color: white;
+      padding: 1.5rem 6rem;
+      letter-spacing: 3px; }
+      .dialog__action__btn:hover {
+        background: rgba(255, 255, 255, 0.25);
+        color: black; }
+    .dialog__action__or {
+      font-size: 2rem;
+      font-weight: 100; }
+
+.feature {
+  text-align: center;
+  margin: 10rem 0; }
+  .feature__title {
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 3rem; }
+  .feature__description {
+    font-size: 2rem;
+    padding: 0 4rem;
+    margin-bottom: 6rem; }
+  .feature__card__items {
+    padding: 0 1rem; }
+  .feature__card__img {
+    font-size: 8rem;
+    color: #6f4e37; }
+  .feature__card__title {
+    font-size: 2rem;
+    color: #6f4e37;
+    margin-bottom: 2rem; }
+  .feature__card__text {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    color: #818b92; }
+
+.order {
+  position: relative;
+  width: 1600px; }
+  .order__card {
+    position: absolute;
+    top: 16%;
+    left: 15%;
+    color: white;
+    text-align: center;
+    width: 70%; }
+    .order__card__image {
+      font-size: 9rem;
+      margin-bottom: 2rem; }
+    .order__card__title {
+      font-size: 6rem;
+      padding: 0 24rem;
+      font-weight: bold;
+      line-height: 6rem;
+      margin-bottom: 1rem; }
+    .order__card__description {
+      font-size: 2rem;
+      padding: 0 25rem;
+      margin-bottom: 2rem; }
+    .order__card__btn {
+      border: 1px solid white;
+      margin: 0 4rem;
+      background: transparent;
+      color: white;
+      padding: 1.5rem 4rem;
+      font-size: 2rem; }
+      .order__card__btn:hover {
+        background: rgba(255, 255, 255, 0.25);
+        color: black; }
+
+.widget {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3px; }
+
+.menu {
+  text-align: center;
+  margin: 10rem 0; }
+  .menu__title {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 2rem; }
+  .menu__description {
+    font-size: 2rem;
+    padding: 0 45rem;
+    margin-bottom: 8rem; }
+  .menu__items__card {
+    position: relative;
+    padding: 1rem 10rem 3rem 0; }
+    .menu__items__card__upper {
+      display: flex;
+      justify-content: space-between; }
+      .menu__items__card__upper__name {
+        font-weight: bold;
+        font-size: 2rem; }
+      .menu__items__card__upper__price {
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #6f4e37; }
+      .menu__items__card__upper__preorder {
+        font-weight: 400; }
+    .menu__items__card__seperator {
+      letter-spacing: 7px; }
+    .menu__items__card__description {
+      color: grey;
+      font-size: 2rem;
+      display: flex; }
+    .menu__items__card__not-available {
+      position: absolute;
+      top: 35px;
+      right: 18rem;
+      font-size: 2rem;
+      color: red;
+      transform: rotate(-30deg); }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  font-size: 1.6rem;
+  width: 1600px;
+  z-index: 1000; }
+
+.header {
+  height: 100%; }
+  .header__row {
+    width: 100%;
+    padding: 1rem 0; }
+    .header__row__border {
+      border-bottom: 1px solid #f0f2f7; }
+    .header__row__contact {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px; }
+    .header__row__social_media {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px; }
+  .header__nav {
+    display: flex;
+    justify-content: space-between; }
+    .header__nav__element {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 3rem;
+      color: #818b92; }
+      .header__nav__element__item {
+        display: flex;
+        justify-content: space-around;
+        gap: 1.5rem;
+        font-size: 1.5rem; }
+
+.footer__logo {
+  text-align: center;
+  border-top: 1px solid #818b92;
+  border-bottom: 1px solid #818b92;
+  padding: 5rem 0 8rem 0;
+  margin-bottom: 4rem; }
+  .footer__logo__description {
+    padding: 0 36rem;
+    font-size: 1.5rem;
+    margin: 3rem 0; }
+  .footer__logo__location {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    gap: 10px; }
+
+.footer__author {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 4rem 0; }
+  .footer__author__name {
+    color: #818b92;
+    font-size: 1.6rem; }
+  .footer__author__social-media {
+    font-size: 3rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center; }
