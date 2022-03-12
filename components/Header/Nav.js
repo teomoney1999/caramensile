@@ -1,6 +1,5 @@
-import { Row, Col } from "react-bootstrap";
 import Image from "next/image";
-import Box from "../UI/Box";
+import navData from "../../data/nav-data";
 import { BsCartCheckFill, BsSearch } from "react-icons/bs";
 
 const Nav = ({ className }) => {
@@ -11,8 +10,10 @@ const Nav = ({ className }) => {
       </div>
       <div className="header__nav__element">
         <div className="header__nav__element__item">
-          {["Home", "About", "Products"].map((ele) => (
-            <div className="header__nav__element__item--1">{ele}</div>
+          {navData.map((ele) => (
+            <div className="header__nav__element__item--1" key={ele.name}>
+              {ele.name}
+            </div>
           ))}
         </div>
         <BsCartCheckFill className="header__nav__element__item" />

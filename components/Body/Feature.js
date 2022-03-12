@@ -1,8 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { AiOutlineCoffee } from "react-icons/ai";
-import { RiCake3Line } from "react-icons/ri";
-import { GiPieSlice, GiCoffeePot } from "react-icons/gi";
-import featureData from "./feature-data";
+import featureData from "../../data/feature-data";
 
 const Feature = ({ className }) => {
   return (
@@ -19,7 +16,7 @@ const Feature = ({ className }) => {
 
       <Row className="feature__card">
         {featureData.features.map((feature) => (
-          <Col className="feature__card__items">
+          <Col className="feature__card__items" key={feature.title}>
             <div className="feature__card__img">{feature.image}</div>
             <div className="feature__card__title">{feature.title}</div>
             <div className="feature__card__text">{feature.description}</div>
